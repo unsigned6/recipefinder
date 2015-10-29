@@ -1,2 +1,16 @@
-<h1>Recipes#index</h1>
-<p>Find me in app/views/recipes/index.html.erb</p>
+<h1>Searching for - <%= @search_term %></h1>
+<% if @recepies.nil? %>
+<p>No recepies found with relevant information... sorry</p>
+<% else %>
+<table border="1">
+  <tr>
+  	<th>Image</th>
+  	<th>Title</th>
+  	<th>Social rank</th>
+  </tr>
+  <% @recepies.each do |recepie| %>
+  <tr>
+  	<td><%= %></td>
+  	<td></td>
+  	<td></td>
+  </tr>
